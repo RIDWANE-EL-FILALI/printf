@@ -2,17 +2,11 @@
 
 /**
  * ft_print - a function that handle the after % case.
+ * _printf - _Printf function
  * @args: the element to handle
  * @format: the strinf giving
  * @count: counter how much printed
  * @i: over the string
- *
- * Rteurn: void
- */
-/**
- * _printf - a function that replace printf function.
- * @format: the string given
- * @...: args
  *
  * Rteurn: void
  */
@@ -36,6 +30,12 @@ void	ft_print(va_list args, const char *format, int *count, int *i)
 		ft_putpointer(va_arg(args, void *), count);
 	*i += 1;
 }
+
+/**
+ * _printf - Printf function
+ * @format: format.
+ * Return: Printed chars.
+ */
 
 int	_printf(const char *format, ...)
 {
