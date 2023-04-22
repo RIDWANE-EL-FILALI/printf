@@ -28,6 +28,13 @@ void	ft_print(va_list args, const char *format, int *count, int *i)
 		ft_putuphex(va_arg(args, unsigned int), count);
 	else if (format[*i] == 'p')
 		ft_putpointer(va_arg(args, void *), count);
+	else if (format[*i] == 'o')
+		ft_putoctal(va_arg(args, unsigned int), count);
+	else
+	{
+		ft_putchar('%', count);
+		ft_putchar(format[*i], count);
+	}
 	*i += 1;
 }
 
@@ -51,7 +58,10 @@ int	_printf(const char *format, ...)
 	while (format[i] && i < n)
 	{
 		if (format[i] != '%')
-			ft_putchar(format[i++], &count);
+		{
+			ft_putchar(format[i], &count);
+			i++;
+		}
 		else if (i < n)
 		{
 			i++;

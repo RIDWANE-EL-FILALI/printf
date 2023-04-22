@@ -19,7 +19,7 @@ void	ft_putuphex(unsigned int n, int *count);
 void	ft_putpointer(void *p, int *count);
 void	ft_putunbr(unsigned int n, int *count);
 size_t	ft_strlen(const char *s);
-
+void    ft_putoctal(unsigned long n, int *count);
 
 
 #endif
