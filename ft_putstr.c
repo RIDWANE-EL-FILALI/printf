@@ -1,5 +1,12 @@
 #include "main.h"
 
+/**
+ * ft_putstr - a function that prints a string.
+ * @str: the giving string
+ * @count:
+ *
+ * Rteurn: void
+ */
 void	ft_putstr(const char *str, int *count)
 {
 	int	i;

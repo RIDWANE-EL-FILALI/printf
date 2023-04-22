@@ -1,5 +1,12 @@
 #include "main.h"
 
+/**
+ * ft_putunbr - a function that prints a unsigned number.
+ * @n: the number
+ * @count: counter
+ *
+ * Rteurn: void
+ */
 void	ft_putunbr(unsigned int n, int *count)
 {
 	if (n >= 10)

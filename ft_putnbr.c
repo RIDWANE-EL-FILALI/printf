@@ -1,11 +1,18 @@
 #include "main.h"
 
+/**
+ * ft_putnbr - a function that prints a number.
+ * @n: the number
+ * @count: pointer for putchar
+ *
+ * Rteurn: void
+ */
 void	ft_putnbr(int n, int *count)
 {
 	if (n == -2147483648)
 	{
 		ft_putstr("-2147483648", count);
-		return ;
+		return;
 	}
 	if (n < 0)
 	{

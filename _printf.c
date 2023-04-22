@@ -1,5 +1,21 @@
 #include "main.h"
 
+/**
+ * ft_print - a function that handle the after % case.
+ * @args: the element to handle
+ * @format: the strinf giving
+ * @count: counter how much printed
+ * @i: over the string
+ *
+ * Rteurn: void
+ */
+/**
+ * _printf - a function that replace printf function.
+ * @format: the string given
+ * @...: args
+ *
+ * Rteurn: void
+ */
 void	ft_print(va_list args, const char *format, int *count, int *i)
 {
 	if (format[*i] == '%')
@@ -42,6 +58,6 @@ int	_printf(const char *format, ...)
 			ft_print(args, format, &count, &i);
 		}
 	}
-	va_end (args);
+	va_end(args);
 	return (count);
 }
